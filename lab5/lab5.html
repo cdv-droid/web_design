@@ -1,0 +1,138 @@
+<! DOCTYPE HTML PUBLIC "- / / W3C / / DTO HTML 3.2 / / EN">
+<html>
+
+<head>
+    <title>Lab5_Chernenko </title>
+</head>
+
+<body background="../hex_pattern.png" bgcolor="#dee8f9">
+
+    <form enctype="multipart/form-data" action="file:///home/kate/Desktop/web/web_design/lab5/lab4.html" accept-charset="UTF-8" method="post">
+        <div>
+            <div>
+                <p>
+                    <label for="issue_tracker_id">Tracker<span> *</span></label>
+                    <input type=radio name=tracker value=1 checked/> Bug
+                    <input type=radio name=tracker value=2/> Feature
+                    <input type=radio name=tracker value=3/> Support
+                </p>
+
+                <p>
+                    <label>Subject<span> *</span>
+                    </label>
+                    <input size="80" maxlength="255" value="" name="issue[subject]" type="text">
+                </p>
+
+                <p>
+                    <label>Description</label>
+
+                    <span>
+    					<div><textarea cols="60" rows="10" name="issue[description]"></textarea></div>
+					</span>
+                </p>
+     
+                <div>
+                    <div>
+                        <div>
+                            <p>
+                                <label>Status<span> *</span>
+                                </label>
+                                <select name="issue[status_id]">
+                                    <option selected="selected" value="1">New</option>
+                                    <option value="2">In Progress</option>
+                                    <option value="3">Resolved</option>
+                                    <option value="5">Closed</option>
+                                    <option value="6">Rejected</option>
+                                    <option value="7">Reopened</option>
+                                    <option value="8">Won't fix</option>
+                                    <option value="9">Not a Bug</option>
+                                    <option value="10">Can't reproduce</option>
+                                </select>
+                            </p>
+
+                            <p>
+                                <label>Priority<span> *</span>
+                                </label>
+                                <select name="issue[priority_id]">
+                                    <option value="1">Low</option>
+                                    <option selected="selected" value="2">Normal</option>
+                                    <option value="3">High</option>
+                                    <option value="4">Urgent</option>
+                                    <option value="5">Immediate</option>
+                                </select>
+                            </p>
+
+                        </div>
+
+                        <div>
+
+
+                            <p>
+                                <label>Start date</label>
+                                <input size="10" name="issue[start_date]" type="text">
+                            </p>
+
+                            <p>
+                                <label>Due date</label>
+                                <input size="10" name="issue[due_date]" type="text">
+                            </p>
+
+                            <p>
+                                <label>Estimated time</label>
+                                <input size="3" name="issue[estimated_hours]" type="text"> Hours</p>
+
+                            <p>
+                                <label>% Done</label>
+                                <select name="issue[done_ratio]">
+                                    <option selected="selected" value="0">0 %</option>
+                                    <option value="10">10 %</option>
+                                    <option value="20">20 %</option>
+                                    <option value="30">30 %</option>
+                                    <option value="40">40 %</option>
+                                    <option value="50">50 %</option>
+                                    <option value="60">60 %</option>
+                                    <option value="70">70 %</option>
+                                    <option value="80">80 %</option>
+                                    <option value="90">90 %</option>
+                                    <option value="100">100 %</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <p>
+                                <label><span>Release</span>
+                                </label>
+                                <select name="issue[custom_field_values][2]">
+                                    <option value="">&nbsp;</option>
+                                    <option value="Next Release">Next Release</option>
+                                    <option value="Undecided">Undecided</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label><span>Category</span>
+                                </label>
+                                <select name="issue[custom_field_values][4]">
+                                    <option value="">&nbsp;</option>
+                                    <option value="Android">Android</option>
+                                    <option value="iOS">iOS</option>
+                                    <option value="web">web</option>
+                                    <option value="backend">backend</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <input name="commit" value="Create" type="submit">
+    </form>
+
+</body>
+
+</html>
