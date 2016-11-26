@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <title>My awesome site</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+  <script src="arrayProcessor.js"></script>
+
+
+<div id="wrapper">
+	
+	<div id="header" class="block tone3">
+	Header
+	</div>
+
+	<div style="height: 79%; padding-top: 10px">
+
+	<div id="menu" >
+		<div id="menu1" class="block tone2">
+			Menu 1
+		</div>
+
+		<div id="menu2" class="block tone2">
+			Menu 2
+		</div>
+	</div>
+
+	<div style="padding-left: 10px">
+	<div id="content" class="block tone1">
+		
+		<H4>Sum of negative elements</H4>  
+		<H2 id="error"> </H2>  
+			<form name="array">
+				<input type="text" name="1" oninput="validateCell(this)"><br>
+				<input type="text" name="2" oninput="validateCell(this)"><br>
+				<input type="text" name="3" oninput="validateCell(this)"><br>
+				<input type="text" name="4" oninput="validateCell(this)"><br>
+				<input type="text" name="5" oninput="validateCell(this)"><br>
+				<input type="text" name="6" oninput="validateCell(this)"><br>
+				<br>
+				<input type="button" value=Calculate onClick="sumOfNegatives(array)">  
+			</form>
+		<br>
+		<H3 id="result"> </H2>
+	</div>
+
+	</div>
+	</div>
+
+	<div id="footer" class="block tone3">
+	Footer
+	</div>
+
+</div>
+
+</body>
+
+</html>
